@@ -1,0 +1,20 @@
+
+Problem Link: https://toph.co/p/clock-math
+_____________________________________________________
+============= Minute Hand Moves =====================
+# 1 minute, it moves: 6°
+============= Hour Hand Moves =======================
+# 1 hour, it moves: 30°
+# 1 minute, it moves: 0.5°
+==================== Concept ========================
+*** if you find the one angle X 
+then the other angle is Y = 360-X ***
+
+1. Convert minutes to hour, hm = N/5
+2. Left Minutes, lm = N%5
+3. Total hour, H= abs(h-hm)
+4. Total deg, TD = H*30
+5. Add hour hand moves for total minutes  TD+=(m*0.5)
+6. Subtract minutes moves for left minutes TD-=(lm*6)
+7. Ans = min(TD, (360-TD))
+______________________________________________________
