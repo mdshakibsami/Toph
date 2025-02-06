@@ -1,0 +1,11 @@
+Taking input until a sentence ended:
+
+ while (true)
+{
+    string s;   cin>>s;
+    if(s.empty()) break;
+    else
+    {
+
+    }
+}
