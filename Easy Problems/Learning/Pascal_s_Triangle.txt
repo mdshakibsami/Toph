@@ -1,0 +1,15 @@
+Don't print pow(b,x) value directly, put it into required variable first.
+Because printing cout<<pow(b,x) return scientific values for large number 
+which is contradictory  with output of the judge
+___________________________________________________________________________
+
+                    1                       n=0
+                1       1                   n=1
+            1       2       1               n=2
+        1       3       3      1            n=3
+    1       4       6      4      1         n=4
+1       5      10      10      5      1     n=5
+
+
+Sum of the Nth row of the pascal triangle is = 2^n
+_____________________________________________________________________________
